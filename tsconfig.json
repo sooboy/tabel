@@ -1,0 +1,13 @@
+{
+     "compilerOptions": {
+         "module": "amd",
+         "outDir": "./build",
+         "baseUrl": "./src",
+         "paths": {
+             
+         }
+     },
+     "include": [
+         "./src/**/*.ts"
+     ]
+}
