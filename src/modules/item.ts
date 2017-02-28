@@ -22,7 +22,7 @@ interface Columes {
     type: string
 }
 
-interface Setting{
+export interface Setting{
     columes:Columes[]
 }
 
@@ -50,8 +50,9 @@ export class Item {
     constructor(data: Object, setting: Setting) {
         this.setting =setting
         
-        if (!setting.columes){
+        if (setting&&setting.columes){
            this.data =this.parseData(data,setting.columes)
+           console.log(this.data)
         }else{
             console.log("列字段必须设置")
         }

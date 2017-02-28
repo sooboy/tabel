@@ -16,11 +16,12 @@ module.exports ={
             {test:/\.ts$/,loader:'ts-loader'}
         ]
     },
-    plugins:[
-        new uglifyJsPlugin({
-            compress:{
-                warnings:false
-            }
-        })
-    ]
+    // plugins:[
+    //     new uglifyJsPlugin({
+    //         compress:{
+    //             warnings:false
+    //         },
+    //         sourceMap:true
+    //     })
+    // ]
 }
